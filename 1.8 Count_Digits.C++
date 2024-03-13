@@ -14,7 +14,7 @@ int countDigits(int n)
 
     // Iterating while 'cur' > 0.
     while (cur > 0)
-    {
+    { 
         // 'd_0' gives us the digit at 'ones' place decimal notation of 'cur'.
         int d_0 = cur % 10;
         if (d_0 != 0)

@@ -15,3 +15,17 @@ string compareIfElse(int a, int b) {
         return "equal";
 
 }
+---------------------------python-----------------------------
+'''
+    Time complexity: O(1)
+    Space complexity: O(1)
+    
+'''
+
+def compareIfElse(a, b):
+    if a > b:
+        return "greater"
+    elif a < b:
+        return "smaller"
+    else:
+        return "equal"

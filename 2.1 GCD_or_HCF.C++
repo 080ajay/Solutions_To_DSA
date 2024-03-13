@@ -24,3 +24,21 @@ int calcGCD(int n, int m){
     return m;
 
 }
+
+---------------------------python-----------------------------
+'''
+    Time Complexity: O(a)
+    Space Complexity: O(1)
+
+    Where 'a' is minimum of 'n' and 'm'.
+'''
+
+
+def calcGDC(n: int, m: int) -> int:
+    ans = 1
+    # Iterating through all integers from 1 to min(n,m) and
+    # finding the greatest integer that divides both 'n' and 'm'.
+    for i in range(1, min(n, m)+1):
+        if n % i == 0 and m % i == 0:
+            ans = i
+    return ans
